@@ -1,0 +1,27 @@
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Howdy!</title>
+    </head>
+    <body>
+        <h1>Howdy! I am Learning Django!</h1>
+
+        	{% block content %}
+    			<h2>persionList</h2>
+    		<ul>
+        		 {% if all_name %}
+
+        		 	{% for album in all_name %}
+
+           				<li>{{ album.name }}</li>
+
+           			{% endfor %}
+
+           		{% endif %}	
+      		
+   			 </ul>
+			{% endblock %}
+
+
+    </body>
+</html>
